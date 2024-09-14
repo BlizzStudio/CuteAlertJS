@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlertJS Demo</title>
+ 
+    
+</head>
+<body>
+   
+    <button id="showSuccess">Show Success</button>
+    <button id="showWarning">Show Warning</button>
+    <button id="showError">Show Error</button>
+
+  <script src="alert.js"></script>
+
+    <script>
+       document.getElementById('showSuccess').addEventListener('click', function() {
+            Alertjs.create({
+                title: 'Success!',
+                buttonText: 'Great!',
+                type: 'success',
+                width: '200px',
+                height: 'auto',
+                textWidth: '100%',
+                textHeight: 'auto',
+                buttonWidth: '120px',
+                buttonHeight: '50px'
+            });
+        });
+
+        document.getElementById('showWarning').addEventListener('click', function() {
+            Alertjs.create({
+                title: 'Warning!',
+                buttonText: 'Got it!',
+                type: 'warning',
+                width: '400px',
+                height: 'auto',
+                textWidth: '100%',
+                textHeight: 'auto',
+                buttonWidth: '120px',
+                buttonHeight: '50px'
+            });
+        });
+
+        document.getElementById('showError').addEventListener('click', function() {
+            Alertjs.create({
+                title: 'Error!',
+                buttonText: 'Close',
+                type: 'error',
+                width: '400px',
+                height: 'auto',
+                textWidth: '100%',
+                textHeight: 'auto',
+                buttonWidth: '120px',
+                buttonHeight: '50px'
+            });
+        });
+    </script>
+</body>
+</html>
